@@ -43,6 +43,7 @@ h3 { font-weight: var(--serif-small); color: var(--color-ink); }
 .icon { width: 88px; height: 88px; border-radius: 22%; }
 .app-text { display: grid; gap: var(--space-2xs); min-width: 0; }
 .app-text h3 { font-size: var(--text-title); }
+.docs { display: flex; flex-wrap: wrap; gap: var(--space-md); margin-top: var(--space-2xs); font-size: var(--text-sm); }
 .stores { display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: flex-end; }
 
 /* 이름의 뜻: 한 문장 */

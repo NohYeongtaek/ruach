@@ -1,0 +1,28 @@
+/* 지원·개인정보 페이지: 브랜드 밤하늘색, 읽기 쉬운 한 단 */
+:root {
+  --bg: #0b0918;
+  --card: #17132b;
+  --ink: #f5f5f7;
+  --ink-2: #b9b6c8;
+  --accent: #b18cff;
+  --line: rgba(255, 255, 255, 0.12);
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f6fb; --card: #ffffff; --ink: #1b1830; --ink-2: #5d5975; --accent: #6b47d6; --line: rgba(0, 0, 0, 0.1); }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.brand { font-weight: 800; font-size: 18px; color: var(--ink); text-decoration: none; }
+nav { font-size: 14px; }
+a { color: var(--accent); }
+article { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; margin-top: 24px; }
+h1 { margin: 0 0 4px; font-size: 28px; line-height: 1.25; }
+h2 { margin: 28px 0 8px; font-size: 18px; }
+.meta { color: var(--ink-2); font-size: 14px; }
+.lead { font-size: 18px; color: var(--ink-2); }
+.contact { padding: 14px 16px; border-radius: 14px; border: 1px solid var(--line); }
+ul { padding-left: 20px; }
+dt { font-weight: 700; margin-top: 16px; }
+dd { margin: 4px 0 0; color: var(--ink-2); }

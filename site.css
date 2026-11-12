@@ -34,7 +34,7 @@ h3 { font-size: var(--text-xl); line-height: 1.2; }
 .hero h1 { font-size: clamp(3rem, 5.5vw + 1rem, 6rem); max-width: 12ch; letter-spacing: -0.035em; background: linear-gradient(180deg, var(--color-night-ink) 30%, var(--color-night-muted)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .lead { font-size: var(--text-lead); line-height: 1.45; color: var(--color-night-muted); max-width: 34ch; text-wrap: balance; }
 .actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-lg); }
-.shelf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(12px, 2vw, 28px); width: min(100%, 760px); }
+.shelf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-lg); width: min(100%, 760px); }
 .shelf img { width: 100%; aspect-ratio: 1; border-radius: 22.5%; box-shadow: 0 20px 50px color-mix(in oklab, var(--color-night) 70%, transparent); }
 
 /* 앱: 밝은 갤러리 */

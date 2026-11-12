@@ -52,13 +52,9 @@ h3 { font-size: var(--text-xl); line-height: 1.2; }
 .docs { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); margin-top: var(--space-xs); font-size: var(--text-sm); }
 .stores { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
 
-/* 이름의 뜻: 검정 위 큰 문장 */
-.statement { background: var(--color-night); color: var(--color-night-ink); padding-block: var(--section-gap-l); }
-.say { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.25rem, 4.5vw + 0.5rem, 5rem); line-height: 1.15; letter-spacing: -0.03em; max-width: 18ch; }
-
 /* 맺음 */
 .close { background: var(--color-paper); padding-block: var(--space-xl); }
-.close-in { display: grid; gap: var(--space-md); }
+.close-in { display: grid; gap: var(--space-md); border-top: 1px solid var(--color-rule); padding-top: var(--space-lg); }
 .legal { display: grid; gap: var(--space-xs); font-size: var(--text-xs); line-height: 1.6; }
 .facts { margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-lg); }
 .facts > div { display: flex; gap: var(--space-xs); }
@@ -94,8 +90,6 @@ h3 { font-size: var(--text-xl); line-height: 1.2; }
 .icon-link { width: fit-content; }
 .shelf img { animation: drift linear both; animation-timeline: view(); animation-range: cover 50% exit 100%; }
 
-    /* 문장: 화면 가운데에 올수록 한 줄씩 밝아진다 */
-    .say span { animation: lit linear both; animation-timeline: view(); animation-range: cover 20% cover 42%; }
   }
   /* 넓은 화면: 앱 구간을 붙잡고 카드를 가로로 흘린다 */
   @media (prefers-reduced-motion: no-preference) and (min-width: 60rem) {
@@ -107,7 +101,6 @@ h3 { font-size: var(--text-xl); line-height: 1.2; }
 }
 @keyframes hero-out { to { opacity: 0; scale: 0.9; translate: 0 -60px; } }
 @keyframes drift { to { translate: 0 var(--lift); rotate: calc(var(--n) * 2deg - 5deg); } }
-@keyframes lit { from { opacity: 0.18; } to { opacity: 1; } }
 @keyframes slide { to { transform: translateX(calc(-100% + 100cqw)); } }
 
 @media (max-width: 40rem) {

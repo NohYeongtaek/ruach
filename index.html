@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ruach</title>
 <meta name="description" content="Ruach(루아흐)가 만든 앱: 아틀리에316, 말씀316, 패밀리 아카이브, 피싱멈춰!, 루아흐 필름, 뉴비.">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#0071E3">
 <link rel="icon" href="icons/ruach.svg" type="image/svg+xml">
 <link rel="icon" href="icons/ruach-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="icons/ruach-180.png">
@@ -14,130 +14,127 @@
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header class="bar">
-  <div class="container bar-in">
+<!-- 첫 화면: 파랑 바탕에 바람 선, 아이콘 줄, 큰 워드마크 -->
+<header id="top" class="hero">
+  <svg class="wind" aria-hidden="true" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <path d="M0 180 C 240 80, 480 280, 720 180 S 1200 80, 1440 180" style="--t:12s; --d:0s; opacity:.55"/>
+    <path d="M0 340 C 240 440, 480 240, 720 340 S 1200 440, 1440 340" style="--t:15s; --d:-4s; opacity:.4"/>
+    <path d="M0 520 C 240 420, 480 620, 720 520 S 1200 420, 1440 520" style="--t:10s; --d:-7s; opacity:.6"/>
+    <path d="M0 700 C 240 800, 480 600, 720 700 S 1200 800, 1440 700" style="--t:16s; --d:-2s; opacity:.45"/>
+  </svg>
+  <div class="topbar">
     <a class="wordmark" href="#top">Ruach</a>
     <nav aria-label="주요 메뉴">
       <a href="#apps">앱</a>
       <a href="#company">사업자 정보</a>
-      <a class="btn btn-sm" href="mailto:yt873588@gmail.com">문의</a>
+      <a class="pill" href="mailto:yt873588@gmail.com">문의</a>
     </nav>
   </div>
+  <div class="hero-body">
+    <h1>숨, 바람, 영</h1>
+    <p class="lede">숨 쉬듯 곁에</p>
+    <ul class="shelf" aria-label="Ruach가 만든 앱 아이콘">
+      <li style="--i:0"><a class="store-link" href="https://apps.apple.com/kr/app/id6808108442" data-ios="https://apps.apple.com/kr/app/id6808108442" data-android="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix" aria-label="아틀리에316 받기"><img src="icons/atelier316.jpg" alt="아틀리에316 아이콘" width="512" height="512"></a></li>
+      <li style="--i:1"><a class="store-link" href="https://apps.apple.com/kr/app/id6821220614" data-ios="https://apps.apple.com/kr/app/id6821220614" aria-label="말씀316 받기"><img src="icons/verse316.jpg" alt="말씀316 아이콘" width="512" height="512"></a></li>
+      <li style="--i:2"><a class="store-link" href="https://apps.apple.com/kr/app/id6827439478" data-ios="https://apps.apple.com/kr/app/id6827439478" data-android="https://play.google.com/store/apps/details?id=com.ruach.petarchive" aria-label="패밀리 아카이브 받기"><img src="icons/family-archive.jpg" alt="패밀리 아카이브 아이콘" width="512" height="512"></a></li>
+      <li style="--i:3"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" data-android="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" aria-label="피싱멈춰! 받기"><img src="icons/fishing-stop.png" alt="피싱멈춰! 아이콘" width="512" height="512"></a></li>
+      <li style="--i:4"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.ruachfilm" data-android="https://play.google.com/store/apps/details?id=com.ruachfilm" aria-label="루아흐 필름 받기"><img src="icons/ruach-film.png" alt="루아흐 필름 아이콘" width="512" height="512"></a></li>
+      <li style="--i:5"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie" data-android="https://play.google.com/store/apps/details?id=com.newBie.new_bie" aria-label="뉴비 받기"><img src="icons/newbie.png" alt="뉴비 아이콘" width="512" height="512"></a></li>
+    </ul>
+  </div>
+  <svg class="mark" viewBox="22 96 212 58" role="img" aria-label="Ruach" preserveAspectRatio="xMidYMax meet"><path fill="#fff" d="M25.6 151.3H36.5V132.7H44.8L54.9 151.3H66.9L55.7 130.8C61.7 128.3 65.0 123.1 65.0 115.9C65.0 105.5 58.2 98.8 46.2 98.8H25.6ZM36.5 123.8V107.7H44.2C50.6 107.7 53.8 110.6 53.8 115.9C53.8 121.1 50.6 123.8 44.2 123.8ZM96.1 134.6C96.1 139.9 92.4 142.8 88.5 142.8C84.3 142.8 81.6 139.8 81.6 135.1V111.9H70.9V137.0C70.9 146.2 76.2 151.8 84.2 151.8C90.1 151.8 94.3 148.8 96.1 144.2H96.6V151.3H106.9V111.9H96.1ZM111.8 140.3C111.8 148.1 117.4 152.0 125.0 152.0C130.9 152.0 134.6 149.5 136.5 145.9H136.8V151.3H147.0V124.8C147.0 115.2 138.9 111.4 130.3 111.4C119.8 111.4 113.9 116.8 113.2 123.6H123.5C124.0 120.9 126.4 119.2 130.0 119.2C134.0 119.2 136.2 121.2 136.3 124.5V127.7C134.6 127.7 129.3 128.0 126.5 128.2C119.0 128.6 111.8 131.5 111.8 140.3ZM122.2 140.0C122.2 136.9 124.6 135.2 128.3 134.8C130.1 134.7 134.7 134.4 136.3 134.3V137.2C136.4 141.4 132.9 144.6 128.0 144.6C124.6 144.6 122.2 143.0 122.2 140.0ZM171.4 152.1C181.9 152.1 188.4 145.9 188.9 137.0H178.8C178.2 141.2 175.3 143.6 171.6 143.6C166.3 143.6 163.0 139.2 163.0 131.6C163.0 124.1 166.4 119.7 171.6 119.7C175.6 119.7 178.2 122.4 178.8 126.3H188.9C188.5 117.3 181.6 111.4 171.4 111.4C159.4 111.4 152.1 119.7 152.1 131.7C152.1 143.8 159.4 152.1 171.4 152.1ZM204.8 128.5C204.8 123.3 208.0 120.3 212.5 120.3C217.0 120.3 219.7 123.2 219.7 128.1V151.3H230.4V126.2C230.4 116.9 225.0 111.4 216.8 111.4C210.8 111.4 206.8 114.2 205.0 118.8H204.6V98.8H194.1V151.3H204.8Z"/></svg>
 </header>
 
-<main id="top">
-  <!-- 첫 화면: 검정 위로 아이콘 여섯 개가 바람에 실려 떠오른다 -->
-  <section class="hero">
-    <div class="glow" aria-hidden="true"><span class="ripple"></span></div>
-    <div class="container hero-in">
-      <div class="hero-copy">
-        <h1>숨, 바람, 영</h1>
-      </div>
-    </div>
+<main>
+  <section id="apps">
+    <h2 class="visually-hidden">만든 앱</h2>
+    <ol class="catalogue">
+      <li class="app" id="atelier316" style="--bg:#F2EEE6; --ink:#1B1915; --accent:#B4532F">
+        <div class="app-text">
+          <h3>아틀리에316</h3>
+          <p class="desc">원하는 성경 구절로 나만의 배경화면을 만듭니다. 15개 언어를 지원합니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://apps.apple.com/kr/app/id6808108442">App Store</a>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix">Google Play</a>
+          </div>
+          <p class="docs"><a href="atelier316/">서비스 정보</a><a href="atelier316/#terms">이용약관</a><a href="atelier316/#privacy">개인정보처리방침</a></p>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://apps.apple.com/kr/app/id6808108442" data-ios="https://apps.apple.com/kr/app/id6808108442" data-android="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix" aria-label="아틀리에316 받기"><img class="icon" src="icons/atelier316.jpg" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+      <li class="app" id="verse316" style="--bg:#1F2B40; --ink:#F4F1EA; --accent:#9DB4D9">
+        <div class="app-text">
+          <h3>말씀316</h3>
+          <p class="desc">잠금화면과 홈 화면 위젯에 성경 말씀을 띄워 줍니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://apps.apple.com/kr/app/id6821220614">App Store</a>
+          </div>
+          <p class="docs"><a href="verse316/">개인정보처리방침</a></p>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://apps.apple.com/kr/app/id6821220614" data-ios="https://apps.apple.com/kr/app/id6821220614" aria-label="말씀316 받기"><img class="icon" src="icons/verse316.jpg" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+      <li class="app" id="family-archive" style="--bg:#171225; --ink:#F5EFE6; --accent:#F39A52">
+        <div class="app-text">
+          <h3>패밀리 아카이브</h3>
+          <p class="desc">가족과 반려동물의 사진을 함께 모으는 공유 앨범입니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://apps.apple.com/kr/app/id6827439478">App Store</a>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ruach.petarchive">Google Play</a>
+          </div>
+          <p class="docs"><a href="family-archive/">지원</a><a href="family-archive/privacy.html">개인정보처리방침</a></p>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://apps.apple.com/kr/app/id6827439478" data-ios="https://apps.apple.com/kr/app/id6827439478" data-android="https://play.google.com/store/apps/details?id=com.ruach.petarchive" aria-label="패밀리 아카이브 받기"><img class="icon" src="icons/family-archive.jpg" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+      <li class="app" id="fishing-stop" style="--bg:#2E7D57; --ink:#F3F7F2; --accent:#CFE8D6">
+        <div class="app-text">
+          <h3>피싱멈춰!</h3>
+          <p class="desc">보이스피싱·스미싱 문자를 AI로 분석해 위험도를 쉬운 말로 알려 줍니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop">Google Play</a>
+          </div>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" data-android="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" aria-label="피싱멈춰! 받기"><img class="icon" src="icons/fishing-stop.png" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+      <li class="app" id="ruach-film" style="--bg:#276FAE; --ink:#FFFFFF; --accent:#CFE6F7">
+        <div class="app-text">
+          <h3>루아흐 필름</h3>
+          <p class="desc">전 세계 영화, TV, 인물의 순위와 정보를 찾아봅니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ruachfilm">Google Play</a>
+          </div>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://play.google.com/store/apps/details?id=com.ruachfilm" data-android="https://play.google.com/store/apps/details?id=com.ruachfilm" aria-label="루아흐 필름 받기"><img class="icon" src="icons/ruach-film.png" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+      <li class="app" id="newbie" style="--bg:#F28C28; --ink:#2A1605; --accent:#FFF1DE">
+        <div class="app-text">
+          <h3>뉴비</h3>
+          <p class="desc">게시글, 팔로우, 방명록으로 이어지는 커뮤니티 앱입니다. 테스트 중입니다.</p>
+          <div class="stores">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie">Google Play</a>
+          </div>
+        </div>
+        <a class="store-link icon-link" tabindex="-1" aria-hidden="true" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie" data-android="https://play.google.com/store/apps/details?id=com.newBie.new_bie" aria-label="뉴비 받기"><img class="icon" src="icons/newbie.png" alt="" width="512" height="512" loading="lazy"></a>
+      </li>
+    </ol>
   </section>
-
-  <!-- 앱: 세로로 내리면 카드가 가로로 흐른다(지원 안 되면 손으로 넘기는 줄) -->
-  <section id="apps" class="apps">
-    <div class="apps-pin">
-      <h2 class="visually-hidden">만든 앱</h2>
-      <div class="container">
-        <ul class="shelf" aria-label="Ruach가 만든 앱 아이콘">
-          <li style="--n:0; --lift:-90px"><a class="store-link" href="https://apps.apple.com/kr/app/id6808108442" data-ios="https://apps.apple.com/kr/app/id6808108442" data-android="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix" aria-label="아틀리에316 받기"><img src="icons/atelier316.jpg" alt="아틀리에316 아이콘" width="512" height="512"></a></li>
-          <li style="--n:1; --lift:-160px"><a class="store-link" href="https://apps.apple.com/kr/app/id6821220614" data-ios="https://apps.apple.com/kr/app/id6821220614" aria-label="말씀316 받기"><img src="icons/verse316.jpg" alt="말씀316 아이콘" width="512" height="512"></a></li>
-          <li style="--n:2; --lift:-60px"><a class="store-link" href="https://apps.apple.com/kr/app/id6827439478" data-ios="https://apps.apple.com/kr/app/id6827439478" data-android="https://play.google.com/store/apps/details?id=com.ruach.petarchive" aria-label="패밀리 아카이브 받기"><img src="icons/family-archive.jpg" alt="패밀리 아카이브 아이콘" width="512" height="512"></a></li>
-          <li style="--n:3; --lift:-190px"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" data-android="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" aria-label="피싱멈춰! 받기"><img src="icons/fishing-stop.png" alt="피싱멈춰! 아이콘" width="512" height="512"></a></li>
-          <li style="--n:4; --lift:-110px"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.ruachfilm" data-android="https://play.google.com/store/apps/details?id=com.ruachfilm" aria-label="루아흐 필름 받기"><img src="icons/ruach-film.png" alt="루아흐 필름 아이콘" width="512" height="512"></a></li>
-          <li style="--n:5; --lift:-140px"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie" data-android="https://play.google.com/store/apps/details?id=com.newBie.new_bie" aria-label="뉴비 받기"><img src="icons/newbie.png" alt="뉴비 아이콘" width="512" height="512"></a></li>
-        </ul>
-      </div>
-      <ol class="catalogue">
-        <li class="app">
-          <a class="store-link icon-link" href="https://apps.apple.com/kr/app/id6808108442" data-ios="https://apps.apple.com/kr/app/id6808108442" data-android="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix" aria-label="아틀리에316 받기"><img class="icon" src="icons/atelier316.jpg" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>아틀리에316</h3>
-            <p>원하는 성경 구절로 나만의 배경화면을 만듭니다. 15개 언어를 지원합니다.</p>
-            <p class="docs"><a class="link" href="atelier316/">서비스 정보</a><a class="link" href="atelier316/#terms">이용약관</a><a class="link" href="atelier316/#privacy">개인정보처리방침</a></p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6808108442">App Store</a>
-            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix">Google Play</a>
-          </div>
-        </li>
-        <li class="app">
-          <a class="store-link icon-link" href="https://apps.apple.com/kr/app/id6821220614" data-ios="https://apps.apple.com/kr/app/id6821220614" aria-label="말씀316 받기"><img class="icon" src="icons/verse316.jpg" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>말씀316</h3>
-            <p>잠금화면과 홈 화면 위젯에 성경 말씀을 띄워 줍니다.</p>
-            <p class="docs"><a class="link" href="verse316/">개인정보처리방침</a></p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6821220614">App Store</a>
-          </div>
-        </li>
-        <li class="app">
-          <a class="store-link icon-link" href="https://apps.apple.com/kr/app/id6827439478" data-ios="https://apps.apple.com/kr/app/id6827439478" data-android="https://play.google.com/store/apps/details?id=com.ruach.petarchive" aria-label="패밀리 아카이브 받기"><img class="icon" src="icons/family-archive.jpg" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>패밀리 아카이브</h3>
-            <p>가족과 반려동물의 사진을 함께 모으는 공유 앨범입니다.</p>
-            <p class="docs"><a class="link" href="family-archive/">지원</a><a class="link" href="family-archive/privacy.html">개인정보처리방침</a></p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6827439478">App Store</a>
-            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.ruach.petarchive">Google Play</a>
-          </div>
-        </li>
-        <li class="app">
-          <a class="store-link icon-link" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" data-android="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop" aria-label="피싱멈춰! 받기"><img class="icon" src="icons/fishing-stop.png" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>피싱멈춰!</h3>
-            <p>보이스피싱·스미싱 문자를 AI로 분석해 위험도를 쉬운 말로 알려 줍니다.</p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop">Google Play</a>
-          </div>
-        </li>
-        <li class="app">
-          <a class="store-link icon-link" href="https://play.google.com/store/apps/details?id=com.ruachfilm" data-android="https://play.google.com/store/apps/details?id=com.ruachfilm" aria-label="루아흐 필름 받기"><img class="icon" src="icons/ruach-film.png" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>루아흐 필름</h3>
-            <p>전 세계 영화, TV, 인물의 순위와 정보를 찾아봅니다.</p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.ruachfilm">Google Play</a>
-          </div>
-        </li>
-        <li class="app">
-          <a class="store-link icon-link" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie" data-android="https://play.google.com/store/apps/details?id=com.newBie.new_bie" aria-label="뉴비 받기"><img class="icon" src="icons/newbie.png" alt="" width="512" height="512" loading="lazy"></a>
-          <div class="app-text">
-            <h3>뉴비</h3>
-            <p>게시글, 팔로우, 방명록으로 이어지는 커뮤니티 앱입니다. 테스트 중입니다.</p>
-          </div>
-          <div class="stores">
-            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie">Google Play</a>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
 </main>
 
 <footer id="company" class="close">
-  <div class="container close-in">
-    <p class="sign">숨 쉬듯 곁에, Ruach</p>
-    <div class="legal">
-      <h2 class="visually-hidden">사업자 정보</h2>
-      <dl class="facts">
+  <p class="sign">숨 쉬듯 곁에, Ruach</p>
+  <h2 class="visually-hidden">사업자 정보</h2>
+  <dl class="facts">
         <div><dt>상호</dt><dd>루아흐 (Ruaheu)</dd></div>
         <div><dt>대표</dt><dd>노영택</dd></div>
         <div><dt>사업자등록번호</dt><dd class="num">271-25-02355</dd></div>
         <div><dt>통신판매업 신고</dt><dd>제 2026-성남중원-0551 호</dd></div>
         <div><dt>주소</dt><dd>경기도 성남시 중원구 산성대로552번길 7-4, 402호 (13152)</dd></div>
-        <div><dt>문의</dt><dd><a class="link" href="mailto:yt873588@gmail.com">yt873588@gmail.com</a></dd></div>
+        <div><dt>문의</dt><dd><a href="mailto:yt873588@gmail.com">yt873588@gmail.com</a></dd></div>
       </dl>
-      <p class="meta">© 2026 루아흐</p>
-    </div>
-  </div>
+  <nav class="policies" aria-label="앱별 지원·정책">
+    <p><a class="name" href="#atelier316">아틀리에316</a><a href="atelier316/">서비스 정보</a><a href="atelier316/#terms">이용약관</a><a href="atelier316/#privacy">개인정보처리방침</a></p>
+    <p><a class="name" href="#verse316">말씀316</a><a href="verse316/">개인정보처리방침</a></p>
+    <p><a class="name" href="#family-archive">패밀리 아카이브</a><a href="family-archive/">지원</a><a href="family-archive/privacy.html">개인정보처리방침</a></p>
+  </nav>
+  <p class="meta">© 2026 루아흐</p>
 </footer>
 <script>
   // 아이콘을 누르면 안드로이드는 Google Play, iOS는 App Store로(한쪽만 있으면 그쪽으로)

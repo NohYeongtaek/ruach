@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ruach</title>
 <meta name="description" content="Ruach(루아흐)가 만든 앱: 아틀리에316, 말씀316, 패밀리 아카이브, 피싱멈춰!, 루아흐 필름, 뉴비.">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="icons/family-archive.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
@@ -25,29 +24,36 @@
 </header>
 
 <main id="top">
-  <section class="hero air">
+  <!-- 첫 화면: 검정 위로 아이콘 여섯 개가 바람에 실려 떠오른다 -->
+  <section class="hero">
+    <div class="glow" aria-hidden="true"></div>
     <div class="container hero-in">
-      <h1>바람처럼 곁에 닿는 앱</h1>
-      <p class="lead">Ruach는 히브리어로 숨, 바람, 영을 뜻합니다. 그 이름으로 앱 여섯 개를 만들었습니다.</p>
-      <div class="actions">
-        <a class="btn" href="#apps">앱 둘러보기</a>
-        <a class="link" href="mailto:yt873588@gmail.com">yt873588@gmail.com</a>
+      <div class="hero-copy">
+        <h1>바람처럼 곁에 닿는 앱</h1>
+        <p class="lead">Ruach는 히브리어로 숨, 바람, 영을 뜻합니다. 그 이름으로 앱 여섯 개를 만들었습니다.</p>
+        <div class="actions">
+          <a class="btn" href="#apps">앱 둘러보기</a>
+          <a class="link" href="mailto:yt873588@gmail.com">yt873588@gmail.com</a>
+        </div>
       </div>
       <ul class="shelf" aria-label="Ruach가 만든 앱 아이콘">
-        <li><img src="icons/atelier316.jpg" alt="아틀리에316 아이콘" width="512" height="512"></li>
-        <li><img src="icons/verse316.jpg" alt="말씀316 아이콘" width="512" height="512"></li>
-        <li><img src="icons/family-archive.jpg" alt="패밀리 아카이브 아이콘" width="512" height="512"></li>
-        <li><img src="icons/fishing-stop.png" alt="피싱멈춰! 아이콘" width="512" height="512"></li>
-        <li><img src="icons/ruach-film.png" alt="루아흐 필름 아이콘" width="512" height="512"></li>
-        <li><img src="icons/newbie.png" alt="뉴비 아이콘" width="512" height="512"></li>
+        <li style="--n:0; --lift:-90px"><img src="icons/atelier316.jpg" alt="아틀리에316 아이콘" width="512" height="512"></li>
+        <li style="--n:1; --lift:-160px"><img src="icons/verse316.jpg" alt="말씀316 아이콘" width="512" height="512"></li>
+        <li style="--n:2; --lift:-60px"><img src="icons/family-archive.jpg" alt="패밀리 아카이브 아이콘" width="512" height="512"></li>
+        <li style="--n:3; --lift:-190px"><img src="icons/fishing-stop.png" alt="피싱멈춰! 아이콘" width="512" height="512"></li>
+        <li style="--n:4; --lift:-110px"><img src="icons/ruach-film.png" alt="루아흐 필름 아이콘" width="512" height="512"></li>
+        <li style="--n:5; --lift:-140px"><img src="icons/newbie.png" alt="뉴비 아이콘" width="512" height="512"></li>
       </ul>
     </div>
   </section>
 
+  <!-- 앱: 세로로 내리면 카드가 가로로 흐른다(지원 안 되면 손으로 넘기는 줄) -->
   <section id="apps" class="apps">
-    <div class="container">
-      <h2>만든 앱</h2>
-      <ol class="catalogue ruled">
+    <div class="apps-pin">
+      <div class="container">
+        <h2>만든 앱</h2>
+      </div>
+      <ol class="catalogue">
         <li class="app">
           <img class="icon" src="icons/atelier316.jpg" alt="" width="512" height="512" loading="lazy">
           <div class="app-text">
@@ -56,8 +62,8 @@
             <p class="docs"><a class="link" href="atelier316/">서비스 정보</a><a class="link" href="atelier316/#terms">이용약관</a><a class="link" href="atelier316/#privacy">개인정보처리방침</a></p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://apps.apple.com/kr/app/id6808108442">App Store</a>
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix">Google Play</a>
+            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6808108442">App Store</a>
+            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.ruach.threeonesix.threeonesix">Google Play</a>
           </div>
         </li>
         <li class="app">
@@ -68,7 +74,7 @@
             <p class="docs"><a class="link" href="verse316/">개인정보처리방침</a></p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://apps.apple.com/kr/app/id6821220614">App Store</a>
+            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6821220614">App Store</a>
           </div>
         </li>
         <li class="app">
@@ -79,7 +85,7 @@
             <p class="docs"><a class="link" href="family-archive/">지원</a><a class="link" href="family-archive/privacy.html">개인정보처리방침</a></p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://apps.apple.com/kr/app/id6827439478">App Store</a>
+            <a class="btn btn-line" href="https://apps.apple.com/kr/app/id6827439478">App Store</a>
           </div>
         </li>
         <li class="app">
@@ -89,7 +95,7 @@
             <p>보이스피싱·스미싱 문자를 AI로 분석해 위험도를 쉬운 말로 알려 줍니다.</p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop">Google Play</a>
+            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.rocketdan24.fishingstop">Google Play</a>
           </div>
         </li>
         <li class="app">
@@ -99,7 +105,7 @@
             <p>전 세계 영화, TV, 인물의 순위와 정보를 찾아봅니다.</p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ruachfilm">Google Play</a>
+            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.ruachfilm">Google Play</a>
           </div>
         </li>
         <li class="app">
@@ -109,23 +115,24 @@
             <p>게시글, 팔로우, 방명록으로 이어지는 커뮤니티 앱입니다. 테스트 중입니다.</p>
           </div>
           <div class="stores">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie">Google Play</a>
+            <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.newBie.new_bie">Google Play</a>
           </div>
         </li>
       </ol>
     </div>
   </section>
 
+  <!-- 이름의 뜻: 내리는 만큼 한 줄씩 밝아진다 -->
   <section class="statement">
     <div class="container">
-      <p class="say">숨이 보이지 않아도 살게 하듯, 앱도 조용히 곁에서 일하면 됩니다.</p>
+      <p class="say"><span>숨이</span> <span>보이지</span> <span>않아도</span> <span>살게</span> <span>하듯,</span> <span>앱도</span> <span>조용히</span> <span>곁에서</span> <span>일하면</span> <span>됩니다.</span></p>
     </div>
   </section>
 
   <section id="company" class="company">
     <div class="container company-in">
       <h2>사업자 정보</h2>
-      <dl class="facts ruled">
+      <dl class="facts">
         <div><dt>상호</dt><dd>루아흐 (Ruaheu)</dd></div>
         <div><dt>대표</dt><dd>노영택</dd></div>
         <div><dt>사업자등록번호</dt><dd class="num">271-25-02355</dd></div>

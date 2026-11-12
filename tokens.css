@@ -1,5 +1,4 @@
 :root {
-  color-scheme: dark;
   --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
   --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
   --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
@@ -9,13 +8,12 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(14.5% 0.006 255); --color-paper-2: oklch(18% 0.008 255); --color-paper-3: oklch(22% 0.010 255);
-  --color-ink: oklch(95% 0.006 250); --color-ink-2: oklch(82% 0.008 250); --color-muted: oklch(66% 0.012 250);
-  --color-rule: oklch(30% 0.012 255);
-  --color-accent: oklch(68% 0.150 252); --color-accent-ink: oklch(14.5% 0.006 255); --color-focus: oklch(74% 0.150 252);
-  --color-air: oklch(42% 0.140 255 / 0.35);
-  --font-display: "Sentient", "Noto Serif KR", Georgia, serif; --font-body: "Hanken Grotesk", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
-  --font-outlier: var(--font-body);
-  --radius-card: 0; --radius-pill: 3px; --rule-hair: 1px; --rule-head: 1px;
-  --tracking-display: -0.018em; --tracking-statement: -0.022em; --display-weight: 300; --statement-weight: 300; --serif-small: 400;
+  --color-paper: oklch(97.2% 0.002 286); --color-paper-2: oklch(100% 0 0); --color-paper-3: oklch(92% 0.003 286);
+  --color-night: oklch(0% 0 0); --color-night-2: oklch(17% 0.003 286); --color-night-ink: oklch(96% 0.002 286); --color-night-muted: oklch(68% 0.006 286); --color-night-dim: oklch(34% 0.004 286); --color-night-accent: oklch(74% 0.14 248);
+  --color-ink: oklch(21.5% 0.004 286); --color-ink-2: oklch(36% 0.005 286); --color-muted: oklch(52% 0.006 286);
+  --color-rule: oklch(86% 0.004 286);
+  --color-accent: oklch(55% 0.2 256); --color-accent-ink: oklch(100% 0 0); --color-focus: oklch(62% 0.19 256); --color-glow: oklch(55% 0.17 252 / 0.55);
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Pretendard Variable", Pretendard, system-ui, sans-serif; --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Pretendard Variable", Pretendard, system-ui, sans-serif; --font-outlier: var(--font-body);
+  --radius-card: 28px; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none;
+  --tracking-display: -0.025em; --nav-height: 48px;
 }

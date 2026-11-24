@@ -1,4 +1,4 @@
-/* 루아흐 성경 지원·개인정보 페이지: 앱 아이콘 색(하늘빛 바탕·남색·금박), 읽기 쉬운 한 단 */
+/* 루아흐 팝업북 시리즈 지원·개인정보 페이지(창세기 페이지에서 옮김): 앱 아이콘 색(하늘빛 바탕·남색·금박), 읽기 쉬운 한 단 */
 :root {
   --bg: #0f1a30;
   --card: #1f3157;
@@ -26,3 +26,8 @@ h2 { margin: 28px 0 8px; font-size: 18px; }
 ul { padding-left: 20px; }
 dt { font-weight: 700; margin-top: 16px; }
 dd { margin: 4px 0 0; color: var(--ink-2); }
+.books { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; }
+.books a { display: flex; align-items: center; gap: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; color: var(--ink); }
+.books img { width: 56px; height: 56px; border-radius: 13px; }
+.books b { display: block; }
+.books span { color: var(--ink-2); font-size: 14px; }
